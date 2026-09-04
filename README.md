@@ -1,6 +1,8 @@
-# AI Event Agreegator
+# The Stack
 
-Local pipeline that:
+An AI-powered event and content curation pipeline that turns scattered updates into a ranked, digestible feed.
+
+It:
 
 - scrapes recent YouTube videos
 - scrapes upcoming events
