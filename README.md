@@ -18,13 +18,13 @@ It ingests source material, stores it in PostgreSQL, generates concise summaries
 
 The event brief combines date and location context, a short description, a relevance score, and an RSVP action so a reader can make a decision without opening every source feed.
 
-<img src="docs/showcase/events-digest.gif" alt="The Stack event digest scrolling through ranked event cards with RSVP actions" width="720" />
+<img src="docs/showcase/events-digest-full.gif" alt="The Stack event digest scrolling through ranked event cards with RSVP actions" width="720" />
 
 ### YouTube digest
 
 The video brief surfaces the source, a synthesized summary, topical tags, a relevance score, and a direct Watch action for fast content triage.
 
-<img src="docs/showcase/youtube-digest.gif" alt="The Stack YouTube digest scrolling through ranked video cards with Watch actions" width="720" />
+<img src="docs/showcase/youtube-digest-full.gif" alt="The Stack YouTube digest scrolling through ranked video cards with Watch actions" width="720" />
 
 ## Quick start
 
