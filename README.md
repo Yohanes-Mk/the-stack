@@ -1,18 +1,34 @@
 # The Stack
 
-An AI-powered event and content curation pipeline that turns scattered updates into a ranked, digestible feed.
+The Stack is an AI-powered discovery pipeline that turns scattered YouTube updates and local event feeds into two decision-ready digests: what to watch and where to go.
 
-It:
+It ingests source material, stores it in PostgreSQL, generates concise summaries, applies relevance ranking, and delivers action-oriented Gmail briefs with direct Watch and RSVP links.
 
-- scrapes recent YouTube videos
-- scrapes upcoming events
-- stores everything in Postgres
-- generates AI digests and rankings
-- sends Gmail digests
-- renders a static dashboard artifact
-- exposes a Streamlit demo shell over the stored data
+## What it does
 
-## Prerequisites
+- Ingests recent YouTube videos and upcoming event feeds.
+- Enriches each item with an AI summary, topic tags, and a relevance score.
+- Ranks content into distinct video and event digests.
+- Delivers branded emails and renders a static dashboard artifact.
+- Records pipeline and ranking telemetry for operational visibility.
+
+## Delivery showcase
+
+### Event digest
+
+The event brief combines date and location context, a short description, a relevance score, and an RSVP action so a reader can make a decision without opening every source feed.
+
+<img src="docs/showcase/events-digest.png" alt="The Stack event digest showing ranked event cards with RSVP actions" width="650" />
+
+### YouTube digest
+
+The video brief surfaces the source, a synthesized summary, topical tags, a relevance score, and a direct Watch action for fast content triage.
+
+<img src="docs/showcase/youtube-digest.png" alt="The Stack YouTube digest showing ranked video cards with Watch actions" width="820" />
+
+## Quick start
+
+### Prerequisites
 
 - `uv`
 - Docker Desktop or another local Docker runtime
@@ -21,7 +37,7 @@ It:
 
 This project expects Python `>=3.14`, but the normal workflow is to let `uv` manage that for you.
 
-## First-Time Setup
+### First-time setup
 
 1. Install dependencies:
 
